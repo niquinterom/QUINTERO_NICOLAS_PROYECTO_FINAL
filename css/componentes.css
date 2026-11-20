@@ -1,0 +1,248 @@
+
+.menu__lista {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 0.9375rem;
+}
+
+.menu__enlace {
+  color: var(--color-crema-fondo);
+  text-decoration: none;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.375rem;
+}
+
+
+.menu__enlace--activo {
+  background-color: var(--color-acento-dorado);
+  color: var(--color-cafe-oscuro);
+  font-weight: bold;
+}
+
+
+.sede__boton {
+  display: inline-block;
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 0.625rem 1.125rem;
+  background-color: var(--color-cafe-medio);
+  color: var(--color-blanco-tarjeta);
+  text-decoration: none;
+  border-radius: 0.375rem;
+  font-weight: bold;
+}
+
+
+a[target="_blank"]::after {
+  content: " ↗";
+  font-size: 0.85em;
+}
+
+
+.menu__enlace:not(.menu__enlace--activo):hover {
+  background-color: var(--sombra-suave);
+  text-decoration: underline;
+}
+
+
+.sede__boton:hover {
+  background-color: var(--color-cafe-oscuro);
+}
+
+
+.menu__enlace:focus,
+.sede__boton:focus,
+input:focus {
+  outline: 3px solid var(--color-acento-dorado);
+  outline-offset: 3px;
+}
+
+
+.tabla-horarios {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.875rem;
+  background-color: var(--color-blanco-tarjeta);
+}
+
+.tabla-horarios th,
+.tabla-horarios td {
+  padding: 0.75rem 0.9375rem;
+  border: 1px solid var(--color-latte-suave);
+  text-align: left;
+}
+
+.tabla-horarios thead {
+  background-color: var(--color-cafe-oscuro);
+  color: var(--color-crema-fondo);
+}
+
+
+.tabla-horarios tbody tr:nth-child(even) {
+  background-color: var(--color-crema-fondo);
+}
+
+
+.categoria-carta {
+  background-color: var(--color-blanco-tarjeta);
+  border: 1px solid var(--color-latte-suave);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin: 1.5rem auto;
+  max-width: 56.25rem;
+}
+
+.tabla-productos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.625rem;
+}
+
+.tabla-productos caption {
+  font-family: Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--color-cafe-medio);
+  margin-bottom: 0.75rem;
+  text-align: left;
+}
+
+.tabla-productos th,
+.tabla-productos td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--color-latte-suave);
+  text-align: left;
+}
+
+.tabla-productos thead {
+  background-color: var(--color-cafe-oscuro);
+  color: var(--color-crema-fondo);
+}
+
+
+.tabla-productos tbody tr:nth-child(even) {
+  background-color: var(--color-crema-fondo);
+}
+
+.precio {
+  font-weight: bold;
+  color: var(--color-cafe-medio);
+  text-align: right;
+}
+
+
+.formulario-reserva {
+  max-width: 40.625rem;
+  margin: 2.5rem auto;
+  padding: 1.5rem;
+  background-color: var(--color-blanco-tarjeta);
+  border: 1px solid var(--color-latte-suave);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px var(--sombra-suave);
+}
+
+.formulario-reserva fieldset {
+  border: 1px solid var(--color-latte-suave);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.formulario-reserva legend {
+  font-weight: bold;
+  color: var(--color-cafe-medio);
+  padding: 0 0.5rem;
+}
+
+
+.formulario-reserva input:not([type="radio"]):not([type="checkbox"]),
+.formulario-reserva select,
+.formulario-reserva textarea {
+  width: 100%;
+  padding: 0.625rem;
+  margin-top: 0.375rem;
+  border: 1px solid var(--color-latte-suave);
+  border-radius: 0.375rem;
+  background-color: var(--color-crema-fondo);
+  font-family: inherit;
+}
+
+
+.formulario-reserva input:focus,
+.formulario-reserva select:focus,
+.formulario-reserva textarea:focus,
+.formulario-reserva__boton:focus {
+  outline: 3px solid var(--color-acento-dorado);
+  outline-offset: 2px;
+  background-color: var(--color-blanco-tarjeta);
+}
+
+
+.formulario-reserva__boton {
+  padding: 0.75rem 1.25rem;
+  background-color: var(--color-cafe-medio);
+  color: var(--color-blanco-tarjeta);
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 0.625rem;
+}
+
+.formulario-reserva__boton:hover {
+  background-color: var(--color-cafe-oscuro);
+}
+
+
+.formulario-reserva__boton--secundario {
+  background-color: var(--color-latte-suave);
+  color: var(--color-cafe-oscuro);
+}
+
+.formulario-reserva__boton--secundario:hover {
+  background-color: var(--color-acento-dorado);
+}
+
+
+.sub-menu {
+  max-width: 56.25rem;
+  margin: 1.5rem auto;
+  padding: 0 1.25rem;
+}
+
+.sub-menu__lista {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.sub-menu__enlace {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-blanco-tarjeta);
+  color: var(--color-cafe-oscuro);
+  border: 1px solid var(--color-latte-suave);
+  border-radius: 1.25rem; 
+  text-decoration: none; 
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.sub-menu__enlace:hover {
+  background-color: var(--color-cafe-medio);
+  color: var(--color-blanco-tarjeta);
+}
+
+.sub-menu__enlace:focus {
+  outline: 3px solid var(--color-acento-dorado);
+  outline-offset: 2px;
+}
+
+
+.tabla-contenedor {
+  width: 100%;
+  overflow-x: auto; 
+}

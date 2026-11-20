@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- =========================================================
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/tipografia.css">
+    <link rel="stylesheet" href="css/cajas.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+
+
+<body>
+    <!-- =========================================================
        1. ENCABEZADO Y NAVEGACIÓN PRINCIPAL
        ========================================================= -->
 
-<head>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="carta.html">Carta</a></li>
-            <li><a href="reservas.html">Reservas</a></li>
-            <li><a href="sedes.html">sedes</a></li>
-        </ul>
-    </nav>
+    <header class="cabecera">
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li><a class="menu__enlace" href="index.html">Inicio</a></li>
+                <li><a class="menu__enlace" href="carta.html">Carta</a></li>
+                <li><a class="menu__enlace menu__enlace--activo" href="reservas.html">Reservas</a></li>
+                <li><a class="menu__enlace" href="sedes.html">sedes</a></li>
+            </ul>
+        </nav>
+        <p> ¡Llena los siguientes datos para apartar tu lugar.¡ </p>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESERVAS CAFE ALTIPLANO</title>
-    <H1> RESERVAS </H1>
-    <p> ¡realiza tus reservas aca¡ </p>
-    <img src="imagenes/reservas01.jpg" alt="letrero de reserva" heigth="300" width="400">
-</head>
-<img src="imagenes/reservas01.jpg" heigth="300" width="400">
-<p> ¡Llena los siguientes datos para apartar tu lugar.¡ </p>
-</head>
 
-<!-- =========================================================
+    </header>
+
+    <!-- =========================================================
        2. CONTENIDO PRINCIPAL 
 ========================================================= -->
-<body>
 
 
-    <form action="#" method="POST">
+    <form class="formulario-reserva" action="#" method="POST">
 
 
         <fieldset>
@@ -103,21 +111,24 @@
 
         <br>
 
-        <button type="submit">Reservar mesa</button>
-        <button type="reset">Borrar todo</button>
+        <button class="formulario-reserva__boton" type="submit">Reservar mesa</button>
+        <button class="formulario-reserva__boton formulario-reserva__boton--secundario" type="reset">Borrar
+            todo</button>
 
     </form>
+
+    <hr>
 
     <!-- =========================================================
        3. PIE DE PÁGINA 
        ========================================================= -->
-    <footer>
-        <p> WEB CAFETERIA ALTIPLANO </p>
-        <li>
-            <ul>terminos y condiciones</ul>
-            <ul> politicas de privacidad</ul>
-            <ul> contactos</ul>
-        </li>
+    <footer class="pie-pagina">
+        <p>CAFETERIA ALTIPLANO</p>
+        <ul>
+            <li>Términos y condiciones</li>
+            <li>Políticas de privacidad</li>
+            <li>Contactos</li>
+        </ul>
     </footer>
 
 </body>

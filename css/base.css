@@ -1,0 +1,41 @@
+
+:root {
+  --color-crema-fondo: #faf6f2;      
+  --color-blanco-tarjeta: #ffffff;  
+  --color-latte-suave: #e6d5c3;      
+  --color-cafe-medio: #8c5a3c;       
+  --color-cafe-oscuro: #3e2723;      
+  --color-texto-suave: #5d4037;      
+  --color-acento-dorado: #c89d7c;    
+  
+  --velo-cabecera-oscuro: rgba(62, 39, 35, 0.85);
+  --velo-cabecera-medio: rgba(140, 90, 60, 0.78);
+
+  --sombra-suave: rgba(62, 39, 35, 0.08);
+  --velo-fondo: rgba(250, 246, 242, 0.92);
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: var(--color-crema-fondo);
+  color: var(--color-cafe-oscuro);
+  background-image: linear-gradient(var(--velo-fondo), var(--velo-fondo)), url('../../img/fondo-granos.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

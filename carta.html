@@ -1,207 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- =========================================================
-       1. ENCABEZADO Y NAVEGACIÓN PRINCIPAL
-       ========================================================= -->
 
 <head>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="carta.html">Carta</a></li>
-            <li><a href="reservas.html">Reservas</a></li>
-            <li><a href="sedes.html">sedes</a></li>
-        </ul>
-    </nav>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CARTA CAFE ALTIPLANO</title>
-    <h1>MENU CAFE ALTIPLANO</h1>
-    <P> ¡Aca puedes encontras nuestros productos¡ </P>
-    <img src="imagenes/carta01.jpg" alt="Taza de cafe con cafe granulado al lado sobre un periodico y unos libros"
-        width="400" heigth="300">
+    <title>Carta</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/tipografia.css">
+    <link rel="stylesheet" href="css/cajas.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
-<!-- =========================================================
-       2. CONTENIDO PRINCIPAL 
-========================================================= -->
+
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="#espresso">Espresso</a></li>
-            <li><a href="#cafes filtrados">Cafes filtrados</a></li>
-            <li><a href="#bebidas frias">Bebidas frias</a></li>
-            <li><a href="#reposteria">Reposteria</a></li>
+    <!-- =========================================================
+1. ENCABEZADO Y NAVEGACIÓN PRINCIPAL
+========================================================= -->
+    <header class="cabecera">
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li><a class="menu__enlace" href="index.html">Inicio</a></li>
+                <li><a class="menu__enlace menu__enlace--activo" href="carta.html">Carta</a></li>
+                <li><a class="menu__enlace" href="reservas.html">Reservas</a></li>
+                <li><a class="menu__enlace" href="sedes.html">sedes</a></li>
+            </ul>
+        </nav>
+
+        <P> ¡Aca puedes encontras nuestros productos¡ </P>
+
+    </header>
+
+
+    <!-- =========================================================
+       2. CONTENIDO PRINCIPAL 
+========================================================= -->
+    <nav class="sub-menu">
+        <ul class="sub-menu__lista">
+            <li><a class="sub-menu__enlace" href="#espresso">Espresso</a></li>
+            <li><a class="sub-menu__enlace" href="#cafes filtrados">Cafes filtrados</a></li>
+            <li><a class="sub-menu__enlace" href="#bebidas frias">Bebidas frias</a></li>
+            <li><a class="sub-menu__enlace" href="#reposteria">Reposteria</a></li>
         </ul>
     </nav>
 
+    </article>
     <hr>
-
-    <section id="espresso">
-        <table>
-            <caption> Cafes a base de espresso </caption>
-            <thead>
-                <tr>
-                    <th scope="col">Bebida</th>
-                    <th scope="col">Descripción</th>
-                    <th scope="col" class="precio">Precio</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">Espresso sencillo</th>
-                    <td>café concentrado con notas de cacao o caramelo.</td>
-                    <td class="precio">$7.000</td>
-                </tr>
-                <tr>
-                    <th scope="row">Cortado / Piccolo</th>
-                    <td>espresso con un toque mínimo de leche texturizada que conserva la intensidad del café.</td>
-                    <td class="precio">$9.000</td>
-                </tr>
-                <tr>
-                    <th scope="row">Americano</th>
-                    <td>espresso doble diluido en agua caliente para un perfil más suave y limpio.</td>
-                    <td class="precio">$8.500</td>
-                </tr>
-                <tr>
-                    <th scope="row">Cappuccino / Latte</th>
-                    <td>mayor proporción de leche cremosa, ideal para un sabor más suave.</td>
-                    <td class="precio">$10.000</td>
-                </tr>
-                <tr>
-                    <th scope="row">Moka / Latte de autor</th>
-                    <td>base con cacao o siropes artesanales (vainilla, panela, especias).</td>
-                    <td class="precio">$11.500</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
+    <article class="categoria-carta">
+        <section id="espresso">
+            <div class="tabla-contenedor">
+                <table class="tabla-productos">
+                    <caption> Cafes a base de espresso </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Bebida</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col" class="precio">Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Espresso sencillo</th>
+                            <td>café concentrado con notas de cacao o caramelo.</td>
+                            <td class="tabla-productos__precio">$7.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cortado / Piccolo</th>
+                            <td>espresso con un toque mínimo de leche texturizada que conserva la intensidad del café.
+                            </td>
+                            <td class="tabla-productos__precio">$9.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Americano</th>
+                            <td>espresso doble diluido en agua caliente para un perfil más suave y limpio.</td>
+                            <td class="tabla-productos__precio">$8.500</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cappuccino / Latte</th>
+                            <td>mayor proporción de leche cremosa, ideal para un sabor más suave.</td>
+                            <td class="tabla-productos__precio">$10.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Moka / Latte de autor</th>
+                            <td>base con cacao o siropes artesanales (vainilla, panela, especias).</td>
+                            <td class="tabla-productos__precio">$11.500</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </article>
     <hr>
-
-    <section id="cafes filtrados">
-        <table>
-            <caption> Métodos Filtrados (Pour Over / Inmersión) </caption>
-            <thead>
-                <tr>
-                    <th scope="col">Bebida</th>
-                    <th scope="col">Descripción</th>
-                    <th scope="col" class="precio">Precio</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">V60</th>
-                    <td>taza limpia, aromática y brillante, ideal para resaltar notas frutales o florales.</td>
-                    <td class="precio">$11.000</td>
-                </tr>
-                <tr>
-                    <th scope="row">Chemex</th>
-                    <td>cuerpo ligero y claridad alta, excelente para compartir o apreciar acidez equilibrada.</td>
-                    <td class="precio">$13.000</td>
-                </tr>
-                <tr>
-                    <th scope="row">Aeropress</th>
-                    <td>versátil, con cuerpo medio y textura redonda.</td>
-                    <td class="precio">$10.500</td>
-                </tr>
-                <tr>
-                    <th scope="row">Prensa francesa</th>
-                    <td>cuerpo denso y sensación en boca más robusta</td>
-                    <td class="precio">$14.000</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
+    <article class="categoria-carta">
+        <section id="cafes filtrados">
+            <div class="tabla-contenedor">
+                <table class="tabla-productos">
+                    <caption> Métodos Filtrados (Pour Over / Inmersión) </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Bebida</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col" class="precio">Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">V60</th>
+                            <td>taza limpia, aromática y brillante, ideal para resaltar notas frutales o florales.</td>
+                            <td class="tabla-productos__precio">$11.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Chemex</th>
+                            <td>cuerpo ligero y claridad alta, excelente para compartir o apreciar acidez equilibrada.
+                            </td>
+                            <td class="tabla-productos__precio">$13.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Aeropress</th>
+                            <td>versátil, con cuerpo medio y textura redonda.</td>
+                            <td class="tabla-productos__precio">$10.500</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prensa francesa</th>
+                            <td>cuerpo denso y sensación en boca más robusta</td>
+                            <td class="tabla-productos__precio">$14.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </article>
     <hr>
-
-    <section id="bebidas frias">
-        <table>
-            <caption> Bebidas frias y alternativas </caption>
-            <thead>
-                <tr>
-                    <th scope="col">Bebida</th>
-                    <th scope="col">Descripción</th>
-                    <th scope="col" class="precio">Precio</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">Cold brew / Iced latte</th>
-                    <td>café en frío o espresso sobre hielo y leche.</td>
-                    <td class="precio">$8.000</td>
-                </tr>
-                <tr>
-                    <th scope="row">Espresso tónico / Sodas frutales</th>
-                    <td>combinaciones refrescantes con tónica, cítricos o frutas de temporada.</td>
-                    <td class="precio">$9.500</td>
-                </tr>
-                <tr>
-                    <th scope="row">Matcha latte / Chai latte</th>
-                    <td>opciones sin café para ampliar la oferta de la barra.</td>
-                    <td class="precio">$8.500</td>
-                </tr>
-                <tr>
-                    <th scope="row">Infusiones y tés</th>
-                    <td>hierbas, frutas o tés de hoja suelta.</td>
-                    <td class="precio">$8.000</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
+    <article class="categoria-carta">
+        <section id="bebidas frias">
+            <div class="tabla-contenedor"></div>
+            <table class="tabla-productos">
+                <caption> Bebidas frias y alternativas </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Bebida</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col" class="precio">Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Cold brew / Iced latte</th>
+                        <td>café en frío o espresso sobre hielo y leche.</td>
+                        <td class="tabla-productos__precio">$8.000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Espresso tónico / Sodas frutales</th>
+                        <td>combinaciones refrescantes con tónica, cítricos o frutas de temporada.</td>
+                        <td class="tabla-productos__precio">$9.500</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Matcha latte / Chai latte</th>
+                        <td>opciones sin café para ampliar la oferta de la barra.</td>
+                        <td class="tabla-productos__precio">$8.500</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Infusiones y tés</th>
+                        <td>hierbas, frutas o tés de hoja suelta.</td>
+                        <td class="tabla-productos__precio">$8.000</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </section>
+    </article>
     <hr>
-
-    <section id="reposteria">
-        <table>
-            <caption> Reposteria </caption>
-            <thead>
-                <tr>
-                    <th scope="col">Bebida</th>
-                    <th scope="col">Descripción</th>
-                    <th scope="col" class="precio">Precio</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">Porcion torta tres leches</th>
-                    <td>Deliciosa torta tres leches.</td>
-                    <td class="precio">$8.000</td>
-                </tr>
-                <tr>
-                    <th scope="row">Porcion torta amapola</th>
-                    <td>Deliciosa torta de amapola.</td>
-                    <td class="precio">$8.500</td>
-                </tr>
-                <tr>
-                    <th scope="row">Porcion torta envinada</th>
-                    <td>Deliciosa torta envinada.</td>
-                    <td class="precio">$9.000</td>
-                </tr>
-                <tr>
-                    <th scope="row">Porcion torta de chocolate</th>
-                    <td>Deliciosa torta de chocolate.</td>
-                    <td class="precio">$9.500</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
+    <article class="categoria-carta">
+        <section id="reposteria">
+            <div class="tabla-contenedor">
+                <table class="tabla-productos">
+                    <caption> Reposteria </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Bebida</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col" class="precio">Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Porcion torta tres leches</th>
+                            <td>Deliciosa torta tres leches.</td>
+                            <td class="tabla-productos__precio">$8.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Porcion torta amapola</th>
+                            <td>Deliciosa torta de amapola.</td>
+                            <td class="tabla-productos__precio">$8.500</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Porcion torta envinada</th>
+                            <td>Deliciosa torta envinada.</td>
+                            <td class="tabla-productos__precio">$9.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Porcion torta de chocolate</th>
+                            <td>Deliciosa torta de chocolate.</td>
+                            <td class="tabla-productos__precio">$9.500</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </article>
     <hr>
 
     <!-- =========================================================
        3. PIE DE PÁGINA 
        ========================================================= -->
-    <footer>
-        <p> CAFETERIA ALTIPLANO </p>
-        <li>
-            <ul>terminos y condiciones</ul>
-            <ul> politicas de privacidad</ul>
-            <ul> contactos</ul>
-        </li>
+    <footer class="pie-pagina">
+        <p>CAFETERIA ALTIPLANO</p>
+        <ul>
+            <li>Términos y condiciones</li>
+            <li>Políticas de privacidad</li>
+            <li>Contactos</li>
+        </ul>
     </footer>
 </body>
 
