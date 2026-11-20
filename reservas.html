@@ -14,14 +14,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RESERVAS CAFE ALTIPLANO</title>
     <H1> RESERVAS </H1>
-    <p> ¡realiza tus reservas aca¡ </p>
     <img src="imagenes/reservas01.jpg" heigth="300" width="400">
+    <p> ¡Llena los siguientes datos para apartar tu lugar.¡ </p>
 </head>
+
 <body>
+
+  
+  <form action="#" method="POST">
+
     
+    <fieldset>
+      <legend>Tus datos</legend>
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+      <br><br>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" placeholder="Ej. 320 123 4567" required>
+      <br><br>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+    </fieldset>
+
+    <br>
+
+    
+    <fieldset>
+      <legend>Detalles de la mesa</legend>
+
+      <label for="fecha">Fecha de visita:</label>
+      <input type="date" id="fecha" name="fecha" required>
+      <br><br>
+
+      <label for="personas">Cantidad de personas:</label>
+      <select id="personas" name="personas" required>
+        <option value="" disabled selected>Elige una opción</option>
+        <option value="1">1 persona</option>
+        <option value="2">2 personas</option>
+        <option value="4">4 personas</option>
+        <option value="grupo">Grupo (más de 4)</option>
+      </select>
+      <br><br>
+
+      
+      <p>¿Dónde prefieres sentarte?</p>
+      
+      <input type="radio" id="interior" name="zona" value="interior" required>
+      <label for="interior">Salón interior (con aire acondicionado)</label>
+      <br>
+
+      <input type="radio" id="terraza" name="zona" value="terraza">
+      <label for="terraza">Terraza al aire libre</label>
+      <br>
+
+      <input type="radio" id="barra" name="zona" value="barra">
+      <label for="barra">Cerca de la barra de café</label>
+    </fieldset>
+
+    <br>
+
+    
+    <fieldset>
+      <legend>Notas extra</legend>
+
+      <label for="notas">¿Algún pedido o comentario especial?</label>
+      <br>
+      <textarea id="notas" name="notas" rows="4" cols="35" placeholder="Ej. Es un cumpleaños, prefiero leche deslactosada, etc."></textarea>
+      <br><br>
+
+      
+      <input type="checkbox" id="confirmar" name="confirmar" required>
+      <label for="confirmar">Confirmo que los datos son correctos</label>
+    </fieldset>
+
+    <br>
+
+    <button type="submit">Reservar mesa</button>
+    <button type="reset">Borrar todo</button>
+
+  </form>
 
     <footer>
-            <p> WEB CAFETERIA ALTIPLANO </p>
+            <p> CAFETERIA ALTIPLANO </p>
             <li>
                 <ul>terminos y condiciones</ul>
                 <ul> politicas de privacidad</ul>
