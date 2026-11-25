@@ -246,3 +246,40 @@ input:focus {
   width: 100%;
   overflow-x: auto; 
 }
+
+.linea-tiempo {
+  list-style: none;
+  padding-left: 0;
+  border-left: 3px solid var(--color-cafe);
+  margin-left: 0.5rem;
+}
+
+.linea-tiempo > li {
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+
+.linea-tiempo {
+  list-style: none;
+  padding-left: 0;
+  border-left: 3px solid var(--color-cafe);
+  margin-left: 0.5rem;
+}
+
+.linea-tiempo > li {
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+
+.persona {
+  border: 1px solid #d6ccc2;
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  background-color: #ffffff;
+}
+

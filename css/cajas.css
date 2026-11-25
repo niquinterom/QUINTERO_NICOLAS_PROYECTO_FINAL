@@ -69,3 +69,29 @@
   gap: 1.25rem;
   margin-top: 0.625rem;
 }
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+caption {
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+th,
+td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #dcd3cb;
+  text-align: left;
+}
+
+
+tbody td,
+thead th:last-child {
+  text-align: right;
+}
