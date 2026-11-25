@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,24 +37,175 @@
        2. CONTENIDO PRINCIPAL 
        ========================================================= -->
 
-<nav class="sub-menu">
+    <nav class="sub-menu">
         <ul class="sub-menu__lista">
             <li><a class="sub-menu__enlace" href="#historia">Historia</a></li>
             <li><a class="sub-menu__enlace" href="#equipo">Equipo</a></li>
             <li><a class="sub-menu__enlace" href="#valores">Valores</a></li>
             <li><a class="sub-menu__enlace" href="#cifras">Cifras</a></li>
             <li><a class="sub-menu__enlace" href="#glosario">Glosario</a></li>
+            <li><a class="sub-menu__enlace" href="#formulario">Formulario</a></li>
         </ul>
     </nav>
+    <hr>
+    <section id="historia">
+        <h2> Nuestra Historia</h2>
+        <ol>
+            <li>
+                <h3>2016 - Abrimos el primer local en el centro: 20 m² y tres mesas.</h3>
+            </li>
+            <li>
+                <h3>2018 - Empezamos a tostar nuestro propio café.</h3>
+            </li>
+            <li>
+                <h3>2020 - Inauguramos la sede Norte.</h3>
+            </li>
+            <li>
+                <h3>2022 - Nace el programa «Café con origen» con cinco cooperativas.</h3>
+            </li>
+            <li>
+                <h3>2024 - Abrimos la sede Sur y ya somos 12 baristas.</h3>
+            </li>
+        </ol>
+    </section>
 
+    <hr>
 
+    <section id="equipo" class="sedes">
+        <h2>Nuestro Equipo</h2>
+        <article class="sede">
+            <h3>Lucía Paredes</h3>
+            <h4>Fundadora</h4>
+            <p> "Un buen café empieza en la finca" </p>
+            <img src="imagenes/fundadora.jpg">
+        </article>
+        <article class="sede">
+            <h3>Mateo Quispe</h3>
+            <h4>Maestro tostador</h4>
+            <p> "El tueste es escuchar al grano" </p>
+            <img src="imagenes/maestro_tostador.jpg">
+        </article>
+        <article class="sede">
+            <h3>Camila Rojas</h3>
+            <h4>Jefa de baristas</h4>
+            <p> "Cada taza es una conversación" </p>
+            <img src="imagenes/jefa_baristas.jpg">
+        </article>
+        <article class="sede">
+            <h3>Andrés Salas</h3>
+            <h4>Compras y origen</h4>
+            <p> "Pagar justo es parte del sabors" </p>
+            <img src="imagenes/compras.jpg">
+        </article>
+    </section>
+    <hr>
+    <section id="valores">
+        <h2> Nuestros Valores</h2>
+        <ul>
+            <li><strong>Origen trazable:</strong> Conocemos con exactitud de donde proviene cada grano de nuestros
+                productos.</li>
+            <li><strong>Pago justo a productores:</strong> compramos directamente a caficultores de la region.</li>
+            <li><strong>Cero desperdicio:</strong> Reutilizamos todos los productos organicos para cuidar el medio
+                ambiente.</li>
+            <li><strong>Un espacio para quedarse:</strong> Contamos con espacios comodos para disfrutar de un buen cafe.
+            </li>
+        </ul>
 
+        <blockquote>
+            <p>"Queremos que cada persona que entre se lleve algo más que un café"</p>
+            <footer>— Lucía Paredes <cite>fundadora</cite></footer>
+        </blockquote>
 
+    </section>
+    <hr>
+    <section id="cifras">
+        <h2> Nuestras Cifras</h2>
+        <table>
+            <caption>Cifras principales de nuestra cafetería</caption>
 
+            <thead>
+                <tr>
+                    <th scope="col">Dato</th>
+                    <th scope="col">Valor</th>
+                </tr>
+            </thead>
 
+            <tbody>
+                <tr>
+                    <th scope="row">Sedes</th>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th scope="row">Cooperativas aliadas</th>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th scope="row">Baristas</th>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th scope="row">Años de trayectoria</th>
+                    <td>8</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <hr>
+    <section id="glosario">
+        <h2>Glosario</h2>
 
+        <dl>
+            <dt><strong>Tueste</strong></dt>
+            <dd>Proceso de calentar el grano verde para desarrollar su sabor.</dd>
 
-       <!-- =========================================================
+            <dt><strong>Origen</strong></dt>
+            <dd>Lugar donde se cultivó el café.</dd>
+
+            <dt><strong>Cata</strong> </dt>
+            <dd>Degustación atenta para reconocer aromas y sabores.</dd>
+
+            <dt><strong>Barista</strong> </dt>
+            <dd>Persona especializada en preparar café.</dd>
+        </dl>
+    </section>
+    <hr>
+    <section id="formulario">
+        <h2> Escribenos</h2>
+        <form class="formulario-reserva" action="#" method="POST">
+            <fieldset>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                <br><br>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+
+                <p>¿Motivo?</p>
+
+                <input type="radio" id="interior" name="zona" value="interior" required>
+                <label for="interior">Consulta</label>
+                <br>
+
+                <input type="radio" id="terraza" name="zona" value="terraza">
+                <label for="terraza">Sugerencia</label>
+                <br>
+
+                <input type="radio" id="barra" name="zona" value="barra">
+                <label for="barra">Trabajo</label>
+                <br>
+
+                <label for="notas">¿Descripcion del motivo?</label>
+                <br>
+                <textarea id="notas" name="notas" rows="4" cols="35"
+                    placeholder="Ej. quisiera trabajar con ustedfes, etc."></textarea>
+                <br>
+                <button class="formulario-reserva__boton" type="submit">Enviar</button>
+            </fieldset>
+        </form>
+
+    </section>
+    <!-- =========================================================
        3. PIE DE PÁGINA 
        ========================================================= -->
     <footer class="pie-pagina">
@@ -65,4 +217,5 @@
         </ul>
     </footer>
 </body>
+
 </html>
